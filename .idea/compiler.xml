@@ -6,9 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lab2p2026" />
+      </profile>
+      <profile name="Annotation profile for lab1arq" enabled="true">
+        <sourceOutputDir name="../generated-sources/annotations" />
+        <sourceTestOutputDir name="../generated-test-sources/test-annotations" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="lab1arq.main" />
+        <module name="lab1arq.test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lab2p2026" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
