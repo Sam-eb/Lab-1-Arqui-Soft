@@ -37,6 +37,12 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Run Tests
         run: mvn -B test
+      - name: Uploade coverge with CoverAlls
+        uses: coverallsapp/github-action@v2
+        with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            file: lab1arq/target/site/jacoco/jacoco.xml
+            format: jacoco
   sonar:
     name: SonarCloud analysis
     needs: tests
