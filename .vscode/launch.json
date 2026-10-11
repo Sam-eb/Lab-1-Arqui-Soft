@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Lab1arqApplication",
+            "request": "launch",
+            "mainClass": "com.udea.lab1arq.Lab1arqApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ReservasApplication<Reservas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "Fabrica_EAP05.Reservas.ReservasApplication",
+            "projectName": "Reservas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Lab1arqApplication<lab1arq>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udea.lab1arq.Lab1arqApplication",
+            "projectName": "lab1arq",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
