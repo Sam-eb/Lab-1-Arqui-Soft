@@ -1,0 +1,7 @@
+../UdeBank-frontend/
+node_modules/
+.git/
+*.md
+.idea/
+.vscode/
+target/
