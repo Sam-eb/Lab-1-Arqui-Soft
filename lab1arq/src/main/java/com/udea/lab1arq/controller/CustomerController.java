@@ -18,6 +18,11 @@ public class CustomerController {
     private CustomerService customerFacade;
     
     //Obtener todos los clientes
+    @GetMapping("/")
+    public String healthCheck() {
+        return "HEALTH CHECK OK!";
+    }
+    
     @GetMapping
     public ResponseEntity<List<CustomerDTO>> getAllCustomers() {
         return ResponseEntity.ok(customerFacade.getAllCustomer());
