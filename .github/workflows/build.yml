@@ -104,7 +104,7 @@ jobs:
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: tu-usuario-dockerhub/lab1arq
+          image: sam54eb/lab1arq
           tags: latest
           registry: docker.io
           dockerfile: lab1arq/Dockerfile
