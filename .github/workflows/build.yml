@@ -123,7 +123,7 @@ jobs:
           image: sam54eb/lab1arq
           tags: latest
           registry: docker.io
-          dockerfile: Dockerfile
+          dockerfile: lab1arq/Dockerfile
           directory: lab1arq
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
