@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Table, Button, Card, Spinner, Alert } from 'react-bootstrap';
 import { clienteService } from '../services/clienteService';
-import axios from 'axios';
+import api from '../api/axios';
 
 function ConsultarClientes() {
   const [clientes, setClientes] = useState([]);
@@ -12,7 +12,7 @@ function ConsultarClientes() {
   const cargarClientes = async () => {
     try {
       setCargando(true);
-      const response = await axios.get(`http://localhost:8080/api/customers`)
+      const response = await api.get(`/api/customers`)
       setClientes(response.data);
       setError(null);
     } catch (err) {
