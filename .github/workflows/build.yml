@@ -102,9 +102,10 @@ jobs:
           name: artifact
           path: lab1arq/target/*.jar
       - name: Build & push Docker image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: sam54eb/lab1arq
+          image: tu-usuario-dockerhub/lab1arq
           tags: latest
           registry: docker.io
           dockerfile: lab1arq/Dockerfile
