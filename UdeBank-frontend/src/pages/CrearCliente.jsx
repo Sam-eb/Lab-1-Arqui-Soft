@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import {Alert, FloatingLabel, FormControl, InputGroup, Row,Col } from 'react-bootstrap';
 
 import ChargingButton from '../components/ChargingButton'
-import axios from 'axios';
+import api from '../api/axios';
 
 
 function CrearCliente({open, setOpen}){
@@ -46,7 +46,7 @@ function CrearCliente({open, setOpen}){
       
     }
     try{
-      await axios.post('http://localhost:8080/api/customers', cliente);
+      await api.post('/api/customers', cliente);
 
       setAlertVariant('success');
       setAlertMessage('Cliente guardado con exito');

@@ -4,7 +4,7 @@ import {FloatingLabel, FormControl, InputGroup, Button, Card, Collapse, Row, Col
 
 import ChargingButton from '../components/ChargingButton'
 import Overlay from 'react-bootstrap/Overlay';
-import axios from 'axios';
+import api from '../api/axios';
 
 
 function ClienteID(){
@@ -35,7 +35,7 @@ function ClienteID(){
     setShow(false);
     try{
       setShow(false);
-      const response = await axios.get(`http://localhost:8080/api/customers/${userID}`);
+      const response = await api.get(`/api/customers/${userID}`);
 
       setCliente(response.data);
       setOpen(true)

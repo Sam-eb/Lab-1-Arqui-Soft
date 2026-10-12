@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import {Alert, FloatingLabel, FormControl, InputGroup, Row,Col, Container, Collapse } from 'react-bootstrap';
 
 import ChargingButton from '../components/ChargingButton'
-import axios from 'axios';
+import api from '../api/axios';
 
 function Transferir(){
 
@@ -38,7 +38,7 @@ function Transferir(){
       timestamp,
     };
     try{
-      await axios.post('http://localhost:8080/api/transactions', transaction);
+      await api.post('/api/transactions', transaction);
 
       setOpen(true)
       setShowAlertSucces(true);

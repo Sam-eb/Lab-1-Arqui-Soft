@@ -4,7 +4,7 @@ import {Alert, Spinner,Table, FloatingLabel, FormControl, InputGroup, Button, Ca
 
 import ChargingButton from '../components/ChargingButton'
 import Overlay from 'react-bootstrap/Overlay';
-import axios from 'axios';
+import api from '../api/axios';
 
 function ConsultarTransferencias(){
 
@@ -34,7 +34,7 @@ function ConsultarTransferencias(){
         try{
             setOpen(false)
             setShow(false);
-            const response = await axios.get(`http://localhost:8080/api/transactions/${accountNumber}`)
+            const response = await api.get(`/api/transactions/${accountNumber}`)
             const data = response.data;
             const listaTransacciones = Array.isArray(data) ? data : (data.data || []);
       
