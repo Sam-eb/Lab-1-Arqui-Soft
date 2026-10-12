@@ -101,3 +101,13 @@ jobs:
         with:
           name: artifact
           path: lab1arq/target/*.jar
+      - name: Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+          image: tu-usuario-dockerhub/lab1arq
+          tags: latest
+          registry: docker.io
+          dockerfile: lab1arq/Dockerfile
+          directory: lab1arq
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
