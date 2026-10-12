@@ -4,7 +4,7 @@ import {Alert, Spinner,Table, FloatingLabel, FormControl, InputGroup, Button, Ca
 
 import ChargingButton from '../components/ChargingButton'
 import Overlay from 'react-bootstrap/Overlay';
-import api from '../api/axios';
+import api from '../api/axiosConfig';
 
 function ConsultarTransferencias(){
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Table, Button, Card, Spinner, Alert } from 'react-bootstrap';
 import { clienteService } from '../services/clienteService';
-import api from '../api/axios';
+import api from '../api/axiosConfig';
 
 function ConsultarClientes() {
   const [clientes, setClientes] = useState([]);

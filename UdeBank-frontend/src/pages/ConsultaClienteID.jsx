@@ -4,7 +4,7 @@ import {FloatingLabel, FormControl, InputGroup, Button, Card, Collapse, Row, Col
 
 import ChargingButton from '../components/ChargingButton'
 import Overlay from 'react-bootstrap/Overlay';
-import api from '../api/axios';
+import api from '../api/axiosConfig';
 
 
 function ClienteID(){
