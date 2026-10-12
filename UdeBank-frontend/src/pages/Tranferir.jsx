@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import {Alert, FloatingLabel, FormControl, InputGroup, Row,Col, Container, Collapse } from 'react-bootstrap';
 
 import ChargingButton from '../components/ChargingButton'
-import api from '../api/axios';
+import api from '../api/axiosConfig';
 
 function Transferir(){
 
