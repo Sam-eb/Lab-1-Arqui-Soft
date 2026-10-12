@@ -2,6 +2,8 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Sam-eb_Lab-1-Arqui-Soft&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Sam-eb_Lab-1-Arqui-Soft)
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=Sam-eb_Lab-1-Arqui-Soft&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Sam-eb_Lab-1-Arqui-Soft)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Sam-eb_Lab-1-Arqui-Soft&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Sam-eb_Lab-1-Arqui-Soft)
+[![Known Vulnerabilities](https://snyk.io/test/github/Sam-eb/Lab-1-Arqui-Soft/badge.svg)](https://snyk.io/test/github/Sam-eb/Lab-1-Arqui-Soft)
+[![Coverage Status](https://coveralls.io/repos/github/Sam-eb/Lab-1-Arqui-Soft/badge.svg?branch=main)](https://coveralls.io/github/Sam-eb/Lab-1-Arqui-Soft?branch=main)
 
 En este laboratorio se nos reto ( en el mejor sentido de la palabra) a realizar un front que consumiera los endpoint
 desarrollados durante la clase magistral.
@@ -18,3 +20,4 @@ virtuales que corresponden a este laboratorio.
 Con este código base haremos lo siguiente:
 - Generaremos un pipeline de CI/CD con el cual automatizaremos trabajos repetitivos o rutinarios.
 - Agregaremos la conexión con Sonar para análisis de más profundo del código.
+- Conectaremos el repo con Coveralls
