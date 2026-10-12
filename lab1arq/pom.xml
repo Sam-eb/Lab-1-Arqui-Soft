@@ -176,6 +176,7 @@
                 </executions>
             </plugin>
         </plugins>
+      <finalName>gitlab2arqui</finalName>
     </build>
 
 </project>
