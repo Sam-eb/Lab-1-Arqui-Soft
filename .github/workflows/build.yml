@@ -47,7 +47,7 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/site/jacoco/jacoco.xml
+          file: lab1arq/target/site/jacoco/jacoco.xml
           format: jacoco
 
   sonar:
@@ -124,7 +124,7 @@ jobs:
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile
-          directory: .
+          directory: lab1arq
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
@@ -133,4 +133,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Render Deploy
+        working-directory: .
         run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
